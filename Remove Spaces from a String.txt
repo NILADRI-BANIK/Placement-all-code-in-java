@@ -1,0 +1,20 @@
+Remove Spaces from a String
+Problem Statement: Given a string, write a program to remove all the whitespaces from the string.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int i;
+		String r="";
+		for(i=0;i<s.length();i++){
+		    if(s.charAt(i)==' '){
+		        continue;
+		    }
+		    r=r+s.charAt(i);
+		}
+		System.out.println(r);
+	}
+}

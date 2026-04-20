@@ -1,0 +1,22 @@
+Permutations in which N people can occupy R seats
+Problem Statement: Find the number of permutations in which n people can occupy r seats in a classroom.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int N=sc.nextInt();
+	    int r=sc.nextInt();
+	    int f=1,d,i,f1=1;
+	    d=N-r;
+	    for(i=1;i<=N;i++){
+	        f=f*i;
+	    }
+	    for(i=1;i<=d;i++){
+	        f1=f1*i;
+	    }
+	    int re=f/f1;
+		System.out.println(re);
+	}
+}

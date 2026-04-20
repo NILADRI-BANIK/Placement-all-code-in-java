@@ -1,0 +1,17 @@
+Find the sum of numbers in the given range
+Problem Statement: Find the sum of numbers in the given range.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int l=sc.nextInt();
+	    int r=sc.nextInt();
+	    int i,sum=0;
+	    for(i=l;i<=r;i++){
+	        sum=sum+i;
+	    }
+		System.out.println("Sum is : "+sum);
+	}
+}

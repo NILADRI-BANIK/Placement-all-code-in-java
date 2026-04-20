@@ -1,0 +1,21 @@
+Find LCM of two numbers
+Problem Statement: Find the LCM of two numbers.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int x=a,y=b,t,gcd,lcm;
+		while(y!=0){
+		    t=y;
+		    y=x%y;
+		    x=t;
+		}
+		gcd=x;
+		lcm=(a*b)/gcd;
+		System.out.println(lcm);
+	}
+}

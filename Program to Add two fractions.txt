@@ -1,0 +1,35 @@
+Program to Add two fractions
+Problem Statement: Given numerator and denominator of two fractional numbers, return the sum of two fractional numbers.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n1=sc.nextInt();
+		int d1=sc.nextInt();
+		int n2=sc.nextInt();
+		int d2=sc.nextInt();
+		int a=d1,b=d2,t,lcm,gcd,t1,nc,d,c,n,gcd1;
+		while(b!=0){
+		    t=b;
+		    b=a%b;
+		    a=t;
+		}
+		gcd=a;
+		lcm=(d1*d2)/gcd;
+		n=(n1*(lcm/d1))+(n2*(lcm/d2));
+		c=n;
+		d=lcm;
+		while(d!=0){
+		    t1=d;
+		    d=c%d;
+		    c=t1;
+		}
+		gcd1=c;
+		n=n/gcd1;
+		lcm=lcm/gcd1;
+		System.out.println("Numerator: " +n);
+		System.out.println("Denominator: "+lcm);
+	}
+}

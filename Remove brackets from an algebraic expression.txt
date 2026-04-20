@@ -1,0 +1,21 @@
+Remove brackets from an algebraic expression
+Problem Statement: Given an algebraic expression, write a program to remove brackets from the algebraic expression.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String r="";
+		int i;
+		for(i=0;i<s.length();i++){
+		    if(s.charAt(i)=='('||s.charAt(i)==')'||s.charAt(i)=='{'||s.charAt(i)=='}'||s.charAt(i)=='['||s.charAt(i)==']'){
+		        continue;
+		    }else{
+		        r=r+s.charAt(i);
+		    }
+		}
+		System.out.println(r);
+	}
+}

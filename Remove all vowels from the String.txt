@@ -1,0 +1,20 @@
+Remove all vowels from the String
+Problem Statement: Given a String, write a program to remove vowels from the String.
+
+import java.util.*;
+class Main{
+    public static void main(){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String r="";
+        int i;
+        for(i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U'||c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+                continue;
+            }
+            r=r+c;
+        }
+        System.out.println(r);
+    }
+}

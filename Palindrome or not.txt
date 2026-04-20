@@ -1,0 +1,24 @@
+Check if the given String is Palindrome or not
+Problem Statement: Given a string, check if the string is palindrome or not. A string is said to be palindrome if the reverse of the string is the same as the string.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		int i,j;		
+		boolean f=true;
+		for(i=0,j=s.length()-1;i<j;i++,j--){
+		    if(s.charAt(i)!=s.charAt(j)){
+		        f=false;
+		        break;
+		    }
+		}
+	    if(f==true){
+	        System.out.println("Palindrome no");
+	    }else{
+	        System.out.println("not Palindrome no");
+	    }
+	}
+}

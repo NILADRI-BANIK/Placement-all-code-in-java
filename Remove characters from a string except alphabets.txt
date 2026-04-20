@@ -1,0 +1,22 @@
+Remove characters from a string except the alphabet
+Problem Statement: Write a program to remove all characters from a string except alphabets in a given string.
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String r="";
+		int i;
+		for(i=0;i<s.length();i++){
+		    char c=s.charAt(i);
+		    if(Character.isLetter(c)){
+		        r=r+c;
+		    }else{
+		        continue;
+		    }
+		}
+		System.out.println(r);
+	}
+}

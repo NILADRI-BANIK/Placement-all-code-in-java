@@ -1,0 +1,14 @@
+Calculate the Area of the Circle
+Problem Statement: Given the radius of the circle, calculate the area of the circle. 
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		double pi=3.14,a;
+		a=pi*n*n;
+		System.out.println(a);
+	}
+}

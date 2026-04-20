@@ -1,0 +1,35 @@
+Express given number as Sum of Two Prime Numbers
+Problem Statement: Given a number n, express the number as a sum of 2 prime numbers.
+
+import java.util.*;
+class Main{
+    static boolean isPrime(int a){
+        int i;
+        if(a<=1){
+            return false;
+        }
+        for(i=2;i*i<=a;i++){
+            if(a%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int i;
+    boolean f=false;
+        for(i=2;i<=n;i++){
+            if(isPrime(i) && isPrime(n-i)){
+                f=true;
+                break;
+            }
+        }
+        if(f==true){
+            System.out.println("True");
+        }else{
+            System.out.println("False");
+        }
+    }
+}
